@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Formulário de Login</title>
     <style>
@@ -50,18 +49,18 @@
         }
     </style>
 </head>
-
 <body>
     <div class="login-container">
         <h2>Login</h2>
-        <form action="login.php" method="post">
+        <form id="loginForm">
             <label for="username">Usuário:</label><br>
             <input type="text" id="username" name="username"><br><br>
             <label for="password">Senha:</label><br>
             <input type="password" id="password" name="password"><br><br>
             <input type="submit" value="Login">
         </form>
+        <p id="loginStatus"></p>
     </div>
+    <script src="login.js"></script>
 </body>
-
 </html>
